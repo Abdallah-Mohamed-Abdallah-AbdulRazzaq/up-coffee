@@ -2361,59 +2361,88 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
-@media (max-width: 768px) {
-  .video-sec-area {
-    padding-top: 0px;
-  }
-}
-
-.video-left {
-  padding-left: 10%;
-}
-
-.video-left h6 {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #b68834;
-  font-size: 12px;
-  font-weight: 300;
-}
-
-.video-left h1 {
-  padding-bottom: 20px;
-}
-
-.video-left p span {
-  color: #000;
-  font-weight: 400;
-}
-
-@media (max-width: 960px) {
-  .video-left {
-    margin-top: 50px;
-  }
+.video-sec-area {
+    padding-bottom: 100px;
+    padding-top: 40px;
 }
 
 .video-right {
-  background: url(../img/video-bg.jpg) no-repeat center;
-  background-size: cover;
-  height: 350px;
-  border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
-.video-right .overlay-bg {
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.78);
+.video-right video {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
 }
 
-.video-right .play-btn {
-  z-index: 2;
+.video-left {
+    padding-left: 50px;
 }
 
-@media (max-width: 800px) {
-  .video-right {
-    margin-top: 100px;
-  }
+.video-left h6 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #b68834;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.video-left h1 {
+    padding-bottom: 20px;
+    font-size: 36px;
+    line-height: 1.2;
+    color: #222;
+}
+
+.video-left p {
+    color: #777;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.video-left p span {
+    color: #222;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.video-left img {
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+
+@media (max-width: 991px) {
+    .video-sec-area {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .video-left {
+        padding-left: 0; 
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .video-right {
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .video-left h1 {
+        font-size: 28px;
+    }
 }
 
 .menu-area {
